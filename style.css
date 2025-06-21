@@ -45,9 +45,39 @@ header {
 }
 
 .nav-links a {
-  color: #fff;
+  color: rgb(203, 196, 196);
   text-decoration: none;
   font-weight: bold;
+}
+nav {
+  background-color: rgb(203, 196, 196);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #190f59;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-links li a:hover {
+  background-color: #ffffff;
+  color: #7c1e04;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Bouton du menu mobile */
@@ -169,6 +199,18 @@ footer {
   position: fixed;
   bottom: 50px;
   right: 50px;
+}
+.frame-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.frame-grid iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
 }
 
 /* Responsive */
