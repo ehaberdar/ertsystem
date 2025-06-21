@@ -22,7 +22,7 @@ body {
 /* Styles de l'en-tête */
 header {
   background: rgb(203, 196, 196);
-  padding: 1rem 0;
+  padding: 0px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -35,7 +35,7 @@ header {
 }
 
 .logo {
-  height: 150px;
+  height: 160px;
 }
 
 .nav-links {
@@ -321,4 +321,12 @@ footer {
   }
 }
 
-/* https://drive.google.com/file/d/1itssyLNStA24kUiAhfyrKGPg_xjSJ7ft/view?usp=sharing */
+/* contact */
+#contact,
+#equipe {
+  scroll-margin-top: 130px;
+}
+#services {
+  scroll-margin-top: 180px; /* sticky header yüksekliği kadar */
+  padding-top: 10rem; /* Başlığı aşağıya çekmek için */
+}
