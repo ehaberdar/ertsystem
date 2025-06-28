@@ -21,7 +21,7 @@ body {
 
 /* Styles de l'en-tête */
 header {
-  background: rgb(203, 196, 196);
+  background: rgb(180, 191, 206);
   padding: 0px;
   position: sticky;
   top: 0;
@@ -38,19 +38,8 @@ header {
   height: 160px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: rgb(203, 196, 196);
-  text-decoration: none;
-  font-weight: bold;
-}
 nav {
-  background-color: rgb(203, 196, 196);
+  background-color: rgb(180, 191, 206);
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -218,7 +207,39 @@ h2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+/* partenaire */
+.partenaires {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
 
+.partenaires h2 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo-grid img {
+  width: 65%;
+  max-width: 100px;
+  height: auto;
+  justify-self: center;
+  transition: transform 0.3s ease;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.15);
+}
 /* Avatar équipe */
 .profile-card .avatar {
   width: 80px;
@@ -296,20 +317,41 @@ footer {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #1d3557;
+    background: #7d9ecd;
     position: absolute;
     top: 70px;
-    right: 20px;
-    width: 200px;
-    padding: 1rem;
+    right: 10px;
+    width: 160px; /* Daha dar */
+    padding: 0.7rem;
     border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
   }
+
   .nav-links.show {
     display: flex;
   }
 
   .menu-toggle {
     display: block;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background: #7d9ecd;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+  }
+
+  .nav-links a {
+    color: #ffffff;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+    text-align: right;
+  }
+
+  .nav-links a:hover {
+    background-color: #ffffff;
+    color: #1d3557;
   }
 
   .hero h1 {
@@ -319,14 +361,27 @@ footer {
   .hero p {
     font-size: 1rem;
   }
-}
+  .raccourcil a img {
+    width: 36px;
+    height: auto;
+  }
 
+  .raccourcil {
+    bottom: 20px;
+    right: 20px;
+    gap: 0.5rem;
+  }
+}
 /* contact */
 #contact,
 #equipe {
   scroll-margin-top: 130px;
 }
 #services {
-  scroll-margin-top: 180px; /* sticky header yüksekliği kadar */
-  padding-top: 10rem; /* Başlığı aşağıya çekmek için */
+  scroll-margin-top: 180px; /* jusqua le hauter de sticky header */
+  padding-top: 10rem; /* pour diminuer header*/
+}
+/* raccourcil */
+.raccourcil a img {
+  border-radius: 15px;
 }
